@@ -1,7 +1,7 @@
 # pingisresultat-web-api
 
 ## Infrastructure setup
-configure .env
+configure .env in docker-compose folder
 run: docker-compose -f docker-compose/infra-compose up -d
 
 ## Diesel setup
@@ -14,3 +14,9 @@ reboot
 sudo apt install libpq-dev
 #### 2. Install Cli
 cargo install diesel_cli --no-default-features --features postgres
+#### 3. 
+Configure .env
+diesel setup
+
+## Generate Diesel migration
+diesel migration generate example_migration
