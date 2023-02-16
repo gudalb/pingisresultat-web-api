@@ -20,3 +20,4 @@ diesel setup
 
 ## Generate Diesel migration
 diesel migration generate example_migration
+diesel migration run
